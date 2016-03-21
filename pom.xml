@@ -32,7 +32,11 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-		</dependency>		
+		</dependency>
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+		</dependency>				
 	
 		<dependency>
 			<groupId>junit</groupId>
@@ -41,8 +45,7 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<!-- This dependency BREAKS my code.  Undertow is a Web Server / Servlet Container, and seems unnecessary since I am using Tomcat. -->
-		<!--
+		<!-- This dependency BREAKS my code.  Undertow is a Web Server / Servlet Container, and seems unnecessary since I am using Tomcat. 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-undertow</artifactId>
